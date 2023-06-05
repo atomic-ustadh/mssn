@@ -125,6 +125,14 @@ body {
 	flex-direction: column;
 }
 
+@media screen and (max-width: 600px){
+	.filter-container {
+    position: absolute;
+    right: 10px;
+    top: 250px;
+}
+}
+
 /* New Section */
 
 /* Center website */
