@@ -111,6 +111,7 @@ body {
 	background-color: red;
 	margin-top: -22px;
 	height: auto;
+	padding: 10px 0px;
 }
 /* Banner Section Ends Here */
 
@@ -134,7 +135,7 @@ body {
 	.filter-container {
     position: absolute;
     right: 10px;
-    top: 175px;
+    top: 210px;
 }
 }
 /* Filter Section CSS Ends Here */
