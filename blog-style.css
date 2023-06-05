@@ -7,7 +7,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 	background-color: green;
-	font-family: yu gothic light;
+	font-family: carrois gothic;
 }
 
 /* Special Section Style Ends Here */
@@ -114,13 +114,18 @@ body {
 }
 /* Banner Section Ends Here */
 
+/* Filter Section CSS Starts Here */
 .filter-container{
+	font-family: carrois gothic;
 	position: absolute;
 	right: 10px; 
 	top: 140px;
 }
 
+.filter-container button {font-family: carrois gothic;}
+
 .filter-div{
+	font-family: carrois gothic;
 	display: none;
 	flex-direction: column;
 }
@@ -132,6 +137,7 @@ body {
     top: 250px;
 }
 }
+/* Filter Section CSS Ends Here */
 
 /* New Section */
 
