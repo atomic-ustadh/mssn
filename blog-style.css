@@ -112,8 +112,18 @@ body {
 	margin-top: -22px;
 	height: auto;
 }
-
 /* Banner Section Ends Here */
+
+.filter-container{
+	position: absolute;
+	right: 10px; 
+	top: 140px;
+}
+
+.filter-div{
+	display: none;
+	flex-direction: column;
+}
 
 /* New Section */
 
