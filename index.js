@@ -1,23 +1,23 @@
  // Mobile Navigation in the Header Section Starts Here 
  function closenav() {
-  document.getElementById('navi').style.display = 'none';
+	document.getElementById('navi').style.display = 'none';
 }
 
 function opennav() {
-  document.getElementById('navi').style.display = 'flex';
+	document.getElementById('navi').style.display = 'flex';
 }
 
 // This Javascript code is for the Scroll to Top Button
 // If the scrolling of the page is up to 50px, this function will make the "display" of the "bck-to-top" button "block" 
-  //(i.e It will Change it from "display: none" to "display: block")
+	//(i.e It will Change it from "display: none" to "display: block")
 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
 if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-  document.getElementById("bck-to-top-id").style.display = "block";
+	document.getElementById("bck-to-top-id").style.display = "block";
 } else {
-  document.getElementById("bck-to-top-id").style.display = "none";
+	document.getElementById("bck-to-top-id").style.display = "none";
 }
 }
 
@@ -35,11 +35,11 @@ var elements = document.getElementsByClassName('column');
 
 // Hides Elements that do not match the specified Class Name and Shows Elements that matches the specified Class Name
 for (var i = 0; i < elements.length; i++) {
-  if (elements[i].classList.contains(className)) {
-    elements[i].style.display = '';
-  } else {
-    elements[i].style.display = 'none';
-  }
+	if (elements[i].classList.contains(className)) {
+		elements[i].style.display = '';
+	} else {
+		elements[i].style.display = 'none';
+	}
 }
 }
 
@@ -48,7 +48,7 @@ var elements = document.getElementsByClassName('column');
 
 // Shows all elements
 for (var i = 0; i < elements.length; i++) {
-  elements[i].style.display = '';
+	elements[i].style.display = '';
 }
 }
 
@@ -62,3 +62,12 @@ function hide() {
 document.getElementById("filter-content").style.display = "none";
 }
 // The Code for filter section Ends Here 
+
+// About Dropdown Section - Just 5 lines below - 2 Functions
+function showDrop(){
+document.getElementById("nav-down").style.display = "flex";
+}
+
+function hideDrop(){
+document.getElementById("nav-down").style.display = "none";
+}
