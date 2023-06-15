@@ -66,8 +66,18 @@ document.getElementById("filter-content").style.display = "none";
 // About Dropdown Section - Just 5 lines below - 2 Functions
 function showDrop(){
 document.getElementById("nav-down").style.display = "flex";
+document.getElementById("affilate").style.display = "none";
 }
 
 function hideDrop(){
 document.getElementById("nav-down").style.display = "none";
+}
+
+function affilateDrop(){
+document.getElementById("affilate").style.display = "flex";
+document.getElementById("nav-down").style.display = "none";
+}
+
+function hideAffilate(){
+document.getElementById("affilate").style.display = "none";
 }
