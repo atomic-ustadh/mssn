@@ -131,7 +131,7 @@ body {
 
 	.logo-img{
 		width: 80px;
-		height: 80px;
+		height: max-content;
 		position: relative;
 	}
 	
@@ -282,6 +282,15 @@ body {
 
 .bf-sec-div-btn:hover {
 	background-color: #000000;
+}
+
+.qlink{
+	text-decoration: none;
+	color: black;
+}
+
+.qlink:hover{
+	text-decoration: underline;
 }
 
 /* Mobile Responsiveness Section Starts Here */

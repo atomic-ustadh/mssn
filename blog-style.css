@@ -292,6 +292,15 @@ h1 {
 	background-color: #000000;
 }
 
+.qlink{
+	text-decoration: none;
+	color: black;
+}
+
+.qlink:hover{
+	text-decoration: underline;
+}
+
 /* Mobile Responsiveness Section Starts Here */
 @media screen and (max-width: 600px) {
 
