@@ -26,27 +26,27 @@
 			<a href="blog.html" class="navlink">Lectures</a>
 			<a href="excos.html" class="navlink">Excos</a>
 			<a href="#" class="navlink">Calendar and Activities</a>
-			<a href="#" class="navlink legend" onmouseover="showDrop();">Profile <span> &#8595; </span></a>
+			<a href="#" class="navlink legend" onclick="toggleProDisplay();">Profile <span> &#8595; </span></a>
 			<div id="nav-down" class="about-div">
-				<a href="#" class="about-child" onclick="hideDrop();">About MSSN</a>
-				<a href="#" class="about-child" onclick="hideDrop();">Constitution</a>
-				<a href="#" class="about-child" onclick="hideDrop();">Aims and Objectives</a>
-				<a href="#" class="about-child" onclick="hideDrop();">Staff Advisers</a>
-				<a href="#" class="about-child" onclick="hideDrop();">Shura Committee</a>
-				<a href="#" class="about-child" onclick="hideDrop();">Contact Us</a>
-			</div>
-			<a href="#" class="navlink legend" onmouseover="affilateDrop();">Affilations <span> &#8595; </span> </a>
+					<a href="#" class="about-child" onclick="toggleProDisplay()">About MSSN</a>
+					<a href="#" class="about-child" onclick="toggleProDisplay()">Constitution</a>
+					<a href="#" class="about-child" onclick="toggleProDisplay()">Aims and Objectives</a>
+					<a href="#" class="about-child" onclick="toggleProDisplay()">Staff Advisers</a>
+					<a href="#" class="about-child" onclick="toggleProDisplay()">Shura Committee</a>
+					<a href="#" class="about-child" onclick="toggleProDisplay()">Contact Us</a>
+          </div>
+			<a href="#" class="navlink legend" onclick="toggleAffDisplay();">Affilations <span> &#8595; </span> </a>
 			<div id="affilate" class="affilate-div">
-				<a href="#" class="about-child" onclick="hideAffilate();">Uniabuja Muslim Community</a>
-				<a href="#" class="about-child" onclick="hideAffilate();">MAGACO</a>
-				<a href="#" class="about-child" onclick="hideAffilate();">Ar-Risalah Magazines</a>
+				<a href="#" class="about-child" onclick="toggleAffDisplay()">Uniabuja Muslim Community</a>
+				<a href="#" class="about-child" onclick="toggleAffDisplay()">MAGACO</a>
+				<a href="#" class="about-child" onclick="toggleAffDisplay()">Ar-Risalah Magazines</a>
 			</div>
 		</nav>
 	</header>
 
 	<div class="hc4">
-		<h2 style="text-align: center;"> MUSLIM STUDENTS SOCIETY OF NIGERIA (UNIABUJA CHAPTER) </h2>
-		<p style="text-align: center;"> The Hope Of The Ummah </p>
+		<h2 style="text-align: center; color: white;"> MUSLIM STUDENTS SOCIETY OF NIGERIA (UNIABUJA CHAPTER) </h2>
+		<p style="text-align: center; color: lightgreen;"> The Hope Of The Ummah </p>
 	</div>
 	<!-- Header Section Ends Here -->
 
@@ -157,6 +157,33 @@
 <script>
 	var d = new Date();
 	document.getElementById("taareekh").innerHTML = d.getFullYear();
+</script>
+
+<script>
+    function toggleProDisplay() {
+            var div = document.getElementById("nav-down");
+            if (div.style.display === "none" || div.style.display === "") {
+                div.style.display = "flex";
+            } else {
+                div.style.display = "none";
+            }
+
+            document.getElementById("affilate").style.display = "none";
+
+        };
+
+    function toggleAffDisplay() {
+            var div = document.getElementById("affilate");
+            if (div.style.display === "none" || div.style.display === "") {
+                div.style.display = "flex";
+            } else {
+                div.style.display = "none";
+            }
+
+            document.getElementById("nav-down").style.display = "none";
+
+        };
+
 </script>
 
 </html>

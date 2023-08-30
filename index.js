@@ -81,3 +81,7 @@ function affilateDrop(){
 function hideAffilate(){
 	document.getElementById("affilate").style.display = "none";
 }
+
+function closeItems(){
+	document.getElementById("nav-down").style.display = "none";
+}
